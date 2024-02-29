@@ -19,7 +19,6 @@ public class test1 extends HttpServlet {
         String sql="Select * From goods";
         goodsbeans goods=new goodsbeans();
 
-
         try {
             goods = queryRunner.query(sql,new BeanHandler<>(goodsbeans.class));
         } catch (SQLException e) {
